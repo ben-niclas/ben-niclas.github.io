@@ -1,14 +1,254 @@
 <!doctype html>
 <html>
     <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="main.css" />
     </head>
     <body>
-        <div class="section" id="greeting">
-            <div id="passbild"></div>
-            <div class="compact">
-                <h1>Ben-Niclas Pohl</h1>
-                <h2 class="highlight">Informatikstudent</h2>
+        <div id="outline">
+            <ul class="list">
+                <li class="indicator active">Ausbildung</li>
+                <li class="indicator">Erfahrungen</li>
+                <li class="indicator">Meine Interessen</li>
+                <li class="indicator">Hobbies</li>
+                <li class="indicator">Kontakt</li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="section" id="greeting">
+                <div id="passbild"></div>
+                <div class="compact">
+                    <h1>Ben-Niclas Pohl</h1>
+                    <h2 class="highlight">Informatikstudent</h2>
+                    <ul id="info" class="list">
+                        <li>
+                            <div class="value">
+                                <ion-icon name="mail-unread-outline"></ion-icon>
+                                <div class="identifier">E-Mail</div>
+                                <a href="mailto:Ben-Niclas@hotmail.com"
+                                    >Ben-Niclas@hotmail.com</a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div class="value">
+                                <ion-icon name="call-outline"></ion-icon>
+                                <div class="identifier">Tel.</div>
+                                <a href="">+00 0000 00000 00</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="value">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                                <div class="identifier">LinkedIn</div>
+                                <a href="https://www.linkedin.com/in/ben-niclas"
+                                    >@ben-niclas</a
+                                >
+                            </div>
+                        </li>
+                        <li>
+                            <div class="value">
+                                <ion-icon name="logo-github"></ion-icon>
+                                <div class="identifier">GitHub</div>
+                                <a href="https://github.com/ben-niclas"
+                                    >@ben-niclas</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="contrast floating" />
+            <nav class="section value" id="navigator">
+                <a href="#education" class="goto contrast">
+                    Ausbildung
+                    <ion-icon name="school-outline"></ion-icon>
+                </a>
+                <a href="#experience" class="goto contrast">
+                    Erfahrungen
+                    <ion-icon name="library-outline"></ion-icon>
+                </a>
+                <a href="#interests" class="goto contrast">
+                    Meine Interessen
+                    <ion-icon name="play-outline"></ion-icon>
+                </a>
+                <a href="#hobbies" class="goto contrast">
+                    Hobbies
+                    <ion-icon name="play-outline"></ion-icon>
+                </a>
+                <a href="#contact" class="goto contrast">
+                    Kontakt
+                    <ion-icon name="person-add-outline"></ion-icon>
+                </a>
+            </nav>
+            <!-- <hr /> -->
+            <div class="section content floating" id="about">
+                <div class="value header">
+                    <h2>Über mich</h2>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+                <hr />
+                <div class="text">
+                    Ich studiere im 5. Semester Informatik. Technik, besonders
+                    Software und ihre Möglichkeiten begeistern mich sehr.
+                    Insbesondere in der GreenIT shehe ich besonders viel
+                    Potenzial. Natural Language Processing...
+                </div>
+            </div>
+            <div class="section content floating" id="experience">
+                <div class="value header">
+                    <h2>Erfahrungen</h2>
+                    <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+                <hr />
+                <ul class="list">
+                    <li>
+                        <div class="value">
+                            <div class="keyword">2022</div>
+                            <div class="highlight">Studentenjob Lager und Verkauf bei Kaufland</div>
+                        </div>
+                        <div class="description">
+                            <div class="text">
+                                von .. bis ...
+                            </div>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="value">
+                            <div class="keyword">2023</div>
+                            <div class="highlight">Implementierung eines paging Algorithmus in C</div>
+                        </div>
+                        <div class="description">
+                            <div class="value">
+                                <div class="keyword value">
+                                    paging
+                                    <ion-icon name="help-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="text">
+                            virtuelles vergrößern des Arbeitsspeichers, durch auslagern von Daten auf die Festplatte<div>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="value">
+                            <div class="keyword">2024</div>
+                            <div class="highlight">semantic Search mit Apache Lucene und WordNet</div>
+                        </div>
+                        <div class="description">
+                            <div class="value">
+                                <div class="keyword value">
+                                    Apache Lucene
+                                    <ion-icon name="help-circle-outline"></ion-icon>
+                                </div>
+                                <div class="keyword value">
+                                    WordNet
+                                    <ion-icon name="help-circle-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="text">
+
+                            virtuelles vergrößern des Arbeitsspeichers, durch auslagern von Daten auf die Festplatte<div>
+                            </div>
+                    </li>
+                </ul>
+                <div class="text">
+                    Ich studiere im 5. Semester Informatik. Technik, besonders
+                    Software und ihre Möglichkeiten begeistern mich sehr.
+                    Insbesondere in der GreenIT shehe ich besonders viel
+                    Potenzial. Natural Language Processing...
+                </div>
+            </div>
+            <div class="section content floating" id="education">
+                <div class="value header">
+                    <h2>Ausbildung</h2>
+                    <ion-icon name="school-outline"></ion-icon>
+                </div>
+                <hr />
+                <ul class="list text">
+                    <li class="value">
+                        <div class="year highlight">2011</div>
+                        <div class="purpose">Grundschule</div>
+                        <div class="institution">Bruno-H. Bürgel Grundschule</div>
+                    </li>
+                    <p></p>
+                    <li class="value">
+                        <div class="year highlight">2016</div>
+                        <div class="purpose">Abitur</div>
+                        <div class="institution">
+                            Bertha-von-Suttner-Gymnasium Babelsberg
+                        </div>
+                    </li>
+                    <p></p>
+                    <li class="value">
+                        <div class="year highlight">2022</div>
+                        <div class="purpose">B.sc. Informatik</div>
+                        <div class="institution">
+                            Humboldt-Universität zu Berlin
+                        </div>
+                    </li>
+                    <p></p>
+                    <li class="value">
+                        <div class="year highlight">2024</div>
+                        <div class="purpose">B.sc. Computational Science</div>
+                        <div class="institution">Universität Potsdam</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="section content floating" id="interests">
+                <div class="value header">
+                    <h2>Meine Interessen</h2>
+                    <ion-icon name="flame-outline"></ion-icon>
+                </div>
+                <hr />
+                <div class="value" id="i_keywords">
+                    <div class="keyword value">
+                        NLP
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                    </div>
+                    <div class="keyword value">
+                        Embedded Systems
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                    </div>
+                    <div class="keyword value">
+                        Information Retrieval
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                    </div>
+                    <div class="keyword value">
+                        Green IT
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="text">
+                    Ich studiere im 5. Semester Informatik. Technik, besonders
+                    Software und ihre Möglichkeiten begeistern mich sehr.
+                    Insbesondere in der GreenIT shehe ich besonders viel
+                    Potenzial. Natural Language Processing...
+                </div>
+            </div>
+            <div class="section content floating" id="hobbies">
+                <div class="value header">
+                    <h2>Hobbies</h2>
+                    <ion-icon name="barbell-outline"></ion-icon>
+                </div>
+                <hr />
+                <div class="value" id="h_list">
+                    <div class="text">
+                        <h2>Karate</h2>
+                    </div>
+                    <div class="text">
+                        <h2>Ju-Jutsu</h2>
+                    </div>
+                    <div class="text">
+                        <h2>Kunst</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="section content floating" id="contact">
+                <div class="value header">
+                    <h2>Kontakt</h2>
+                    <ion-icon name="person-add-outline"></ion-icon>
+                </div>
+                <hr />
                 <ul id="info" class="list">
                     <li>
                         <div class="value">
@@ -44,11 +284,27 @@
                             >
                         </div>
                     </li>
+                    <li>
+                        <div class="value">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                            <div class="identifier">Lebenslauf</div>
+                                <a href="https://github.com/ben-niclas" class="keyword contrast">
+                                    <div class="value">
+                                    Download
+                                    <ion-icon
+                                        name="download-outline"
+                                    </ion-icon>
+                                    </div>
+                                </a>
+                        </div>
+                    </li>
                 </ul>
             </div>
+
         </div>
-        <hr class="contrast" />
-        <ion-icon name="heart"></ion-icon>
+            <ion-icon name="heart"></ion-icon>
+        </div>
+        <div id="border"></div>
         <script
             type="module"
             src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"

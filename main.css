@@ -27,6 +27,11 @@
 
 * {
     font-family: "Ubuntu R";
+    overflow-x: hidden;
+}
+
+body {
+    justify-content: space-between;
 }
 
 h1,
@@ -70,12 +75,14 @@ a {
 }
 
 .highlight {
+    display: block;
     background-color: var(--highlight-bg);
     color: var(--highlight-fg);
     display: inline-block;
     padding: 1vh;
     border-radius: 1vw;
-    margin-top: 1vh;
+    min-width: max-content;
+    /* margin-top: 1vh; */
 }
 
 #passbild {
@@ -88,11 +95,20 @@ a {
     border-radius: 100%;
 }
 
+#passbild:hover {
+    transition: 0.2s ease-in;
+    width: 22vh;
+    height: 22vh;
+    margin-right: 1vh;
+}
+
 #greeting {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
+    width: 100%;
 }
 
 #info {
@@ -103,7 +119,7 @@ a {
     font-family: "Ubuntu B";
     margin-left: 1vw;
     text-align: left;
-    width: 5em;
+    width: 6em;
     min-width: max-content;
 }
 
@@ -116,13 +132,270 @@ a {
 
 hr {
     color: var(--contrast);
-    background-color: var(--contrast);
-    border-color: var(--contrast);
+    border-color: var(--border);
+    border-style: solid;
     border-width: 0.2vh;
+}
+
+hr.contrast {
+    border-color: var(--contrast);
+    margin-top: 1em;
+}
+
+.floating {
     margin-left: 1vw;
-    margin-right: 1vw;
+    margin-right: 2vw;
 }
 
 ion-icon {
     height: 3vh;
+}
+
+/* #navigator {
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3em;
+} */
+
+#navigator {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 3em;
+    background-color: white;
+    z-index: 1000;
+}
+
+.goto {
+    font-family: "Ubuntu B";
+    border-radius: 0;
+    /* border: 0.3vh solid var(--border); */
+    /* padding: 1vh 1vw; */
+    /* padding-right: 1vw; */
+    /* border-right: 0.3vh solid var(--border); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: max-content;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.goto ion-icon {
+    margin-left: 1vw;
+}
+
+.goto a {
+    font-family: "Ubuntu B";
+}
+
+.goto:hover {
+    transition: 0.2s ease-in;
+    border-color: var(--contrast);
+    /* background-color: var(--contrast); */
+    /* color: white; */
+}
+
+.contrast {
+    color: var(--contrast);
+}
+
+#outline {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3em;
+    border-radius: 1vw;
+    color: white;
+    /* background-color: #f5f5f5; */
+    min-width: max-content;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+#border {
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 3em;
+    border-radius: 1vw;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.indicator {
+    display: block;
+    width: 2.5vh;
+    height: 2.5vh;
+    background-color: white;
+    border: 0.3vh solid var(--border);
+    border-radius: 50px;
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.indicator.active {
+    color: var(--contrast);
+    background-color: var(--contrast);
+    border: 0.3vh solid var(--contrast);
+}
+
+/* .indicator:hover {
+    transition: 0.2s ease-in;
+    background-color: var(--border);
+} */
+
+.list {
+    flex-direction: column;
+}
+
+#outline .list {
+    margin-top: 3vh;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    height: 50%;
+}
+
+/* #outline:hover {
+    transition: 0.2s ease-in;
+    width: 10em;
+} */
+
+.section.content {
+}
+
+#content {
+    /* box-sizing: content-box; */
+    /* max-width: 100vw; */
+    /* width: 100%; */
+    margin-left: 3em;
+    margin-right: 1em;
+    max-width: 100vw;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    white-space: normal;
+}
+
+#about {
+    box-sizing: content-box;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.text {
+    line-height: 1.5em;
+}
+
+.header {
+    margin-top: 1em;
+}
+
+.header ion-icon {
+    font-size: 3vh;
+}
+
+.header h2 {
+    margin-right: 0.5em;
+}
+
+.year {
+    text-align: center;
+    margin-right: 1em;
+    /* width: 5em; */
+}
+
+.purpose {
+    font-family: "Ubuntu B";
+    min-width: 14em;
+}
+
+.institution {
+}
+
+#education p {
+    margin: 5px;
+    padding: 0;
+}
+
+#education li {
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+#education {
+    position: relative;
+    display: block;
+}
+
+.keyword {
+    padding: 0.3em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 0.2vh solid var(--border);
+    background-color: white;
+    min-width: max-content;
+}
+
+.keyword:hover {
+    transition: 0.2s ease-in;
+    background-color: var(--highlight-bg);
+}
+
+.keyword.contrast {
+    border: 0.2vh solid var(--contrast);
+    background-color: var(--contrast);
+    color: white;
+}
+
+.reactive_text {
+    /* font-size: 1.5vw; */
+}
+
+.keyword {
+    padding: 0.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.7em;
+}
+
+#i_keywords {
+    margin-bottom: 1em;
+}
+
+.description {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 4em;
+}
+
+.description .text {
+    font-family: "Ubuntu RI";
+}
+
+#experience .highlight {
+    font-family: "Ubuntu B";
 }
