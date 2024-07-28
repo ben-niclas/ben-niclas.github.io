@@ -96,10 +96,8 @@ a {
 }
 
 #passbild:hover {
-    transition: 0.2s ease-in;
-    width: 22vh;
-    height: 22vh;
-    margin-right: 1vh;
+    transition: 0.5s ease-in;
+    background-size: 110%;
 }
 
 #greeting {
@@ -168,7 +166,7 @@ ion-icon {
     align-items: center;
     margin-right: 3em;
     background-color: white;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .goto {
@@ -211,26 +209,30 @@ ion-icon {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 3em;
-    border-radius: 1vw;
-    color: white;
-    /* background-color: #f5f5f5; */
-    min-width: max-content;
+    width: 1.5em;
+    border-radius: 0 1vw 1vw 0;
+    color: var(--contrast);
+    background-color: white;
+    /* min-width: max-content; */
 
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     padding: 0;
+    padding-left: 1em;
+    padding-right: 1em;
     margin: 0;
+    z-index: 1000;
 }
 
 #outline a {
-    color: white;
+    padding-left: 1.5em;
+    /* color: white; */
 }
 
 #outline .active a {
-    color: var(--contrast);
+    color: white;
 }
 
 #border {
@@ -239,7 +241,8 @@ ion-icon {
     right: 0;
     top: 0;
     bottom: 0;
-    width: 3em;
+    width: 1em;
+    max-width: 1em;
     border-radius: 1vw;
     min-width: max-content;
     display: flex;
@@ -251,17 +254,18 @@ ion-icon {
 
 .indicator {
     display: block;
-    width: 2.5vh;
+    /* width: 2.5vh; */
     height: 2.5vh;
-    background-color: white;
+    /* background-color: white; */
     border: 0.3vh solid var(--border);
     border-radius: 50px;
     margin: 0;
     margin-bottom: 3vh;
+    text-align: center;
+    padding-right: 1em;
 }
 
 .indicator.active {
-    color: var(--contrast);
     background-color: var(--contrast);
     border: 0.3vh solid var(--contrast);
 }
@@ -279,13 +283,20 @@ ion-icon {
     margin-top: 3vh;
     /* flex-direction: column; */
     /* justify-content: space-between; */
+    width: 100%;
     height: 50%;
 }
 
-/* #outline:hover {
+/* #outline ul :hover {
     transition: 0.2s ease-in;
     width: 10em;
 } */
+
+#outline:hover {
+    transition: 0.2s ease-in;
+    width: 10em;
+    box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.35);
+}
 
 .section.content {
 }
@@ -358,9 +369,10 @@ ion-icon {
 }
 
 .keyword {
-    padding: 0.3em;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
+    padding: 0.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-right: 0.7em;
     border-radius: 50px;
     align-items: center;
     justify-content: center;
@@ -375,20 +387,18 @@ ion-icon {
 }
 
 .keyword.contrast {
+    margin-left: 0.2em;
     border: 0.2vh solid var(--contrast);
     background-color: var(--contrast);
     color: white;
 }
 
-.reactive_text {
-    /* font-size: 1.5vw; */
+.keyword ion-icon {
+    margin-left: 0.3em;
 }
 
-.keyword {
-    padding: 0.4em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin-right: 0.7em;
+.reactive_text {
+    /* font-size: 1.5vw; */
 }
 
 #i_keywords {
@@ -396,9 +406,13 @@ ion-icon {
 }
 
 .description {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    margin-left: 4em;
+    /* margin-top: 0.5em; */
+    /* margin-bottom: 1em; */
+    margin-left: 1.7em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 2.5em;
+    border-left: 0.3vh solid var(--border);
 }
 
 .description .text {
@@ -409,9 +423,28 @@ ion-icon {
     font-family: "Ubuntu B";
 }
 
+#experience ul {
+    list-style-type: circle;
+}
+
+#experience .text li {
+    margin-top: 1em;
+}
+
 #h_list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
+}
+
+#downloads {
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 0.3vh solid var(--border);
+}
+
+.logo {
+    margin-left: 0.3em;
+    font-size: 3vh;
 }
