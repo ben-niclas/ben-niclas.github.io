@@ -225,6 +225,14 @@ ion-icon {
     margin: 0;
 }
 
+#outline a {
+    color: white;
+}
+
+#outline .active a {
+    color: var(--contrast);
+}
+
 #border {
     position: fixed;
     height: 100%;
@@ -305,6 +313,7 @@ ion-icon {
 
 .text {
     line-height: 1.5em;
+    margin-bottom: 1em;
 }
 
 .header {
@@ -398,4 +407,11 @@ ion-icon {
 
 #experience .highlight {
     font-family: "Ubuntu B";
+}
+
+#h_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
 }
