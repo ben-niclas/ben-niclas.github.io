@@ -43,7 +43,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (orientation: portrait) {
     #greeting {
         position: relative !important;
         display: flex !important;
