@@ -18,6 +18,66 @@
     src: url("./fonts/Ubuntu-RI.ttf");
 }
 
+@media (max-width: 936px) {
+    #outline {
+        display: none;
+        visibility: hidden;
+    }
+    #greeting {
+        left: 0 !important;
+        font-size: 15px;
+    }
+    #greeting h1 {
+        font-size: 4vh !important;
+    }
+    #greeting h2 {
+        font-size: 2vh !important;
+    }
+    #passbild {
+        width: 170px !important;
+        height: 200px !important;
+    }
+    #content {
+        margin-left: 22em !important;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    #greeting {
+        position: relative !important;
+        display: flex !important;
+        /* justify-content: center !important; */
+        align-items: center !important;
+        max-width: 100vw !important;
+        width: 100% !important;
+    }
+    #greeting .compact {
+        position: relative !important;
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column;
+    }
+    #greeting h1 {
+        font-size: 2.5em !important;
+    }
+    #greeting h2 {
+        font-size: 1.5em !important;
+    }
+    #passbild {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    #greeting .footer {
+        visibility: hidden !important;
+        display: none !important;
+    }
+    #content {
+        margin-left: 1em !important;
+        margin-right: 1em !important;
+    }
+}
+
 :root {
     --highlight-bg: #eff2ff;
     --highlight-fg: #00177d;
@@ -45,11 +105,11 @@ h6 {
 }
 
 h1 {
-    font-size: 5vh;
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 3vh;
+    font-size: 1.5em;
 }
 
 .list {
@@ -62,16 +122,12 @@ h2 {
 a {
     text-decoration: none;
     color: var(--contrast);
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .compact {
     position: relative;
     display: inline-block;
-}
-
-#greeting .compact {
-    margin-left: 3vw;
 }
 
 .highlight {
@@ -90,9 +146,10 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 20vh;
-    height: 20vh;
+    width: 200px;
+    height: 250px;
     border-radius: 100%;
+    box-sizing: border-box;
 }
 
 #passbild:hover {
@@ -100,13 +157,47 @@ a {
     background-size: 110%;
 }
 
-#greeting {
+/* #greeting {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100vw;
     width: 100%;
+} */
+
+#greeting {
+    position: fixed;
+    height: 100%;
+    left: 2.4em;
+    top: 0;
+    bottom: 0;
+    width: 23em;
+    /* border-radius: 0 1vw 1vw 0; */
+    /* color: var(--contrast); */
+    background-color: white;
+    /* min-width: max-content; */
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* padding-left: 25px; */
+    /* padding-right: 1em; */
+    margin: 0;
+    z-index: 900;
+}
+
+#greeting .compact {
+    margin-left: 3vw;
+    height: 100%;
+}
+
+#greeting .footer {
+    position: absolute;
+    bottom: 3em;
 }
 
 #info {
@@ -305,9 +396,9 @@ ion-icon {
     /* box-sizing: content-box; */
     /* max-width: 100vw; */
     /* width: 100%; */
-    margin-left: 3em;
-    margin-right: 1em;
-    max-width: 100vw;
+    margin-left: 26em;
+    /* margin-right: 1em; */
+    /* max-width: 85vw; */
     text-wrap: wrap;
     overflow-wrap: break-word;
     overflow: hidden;
@@ -320,6 +411,7 @@ ion-icon {
     overflow-wrap: break-word;
     overflow: hidden;
     white-space: normal;
+    margin-top: 1em;
 }
 
 .text {
@@ -379,6 +471,11 @@ ion-icon {
     border: 0.2vh solid var(--border);
     background-color: white;
     min-width: max-content;
+    box-sizing: content-box;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    white-space: normal;
 }
 
 .keyword:hover {
@@ -410,7 +507,7 @@ ion-icon {
     /* margin-bottom: 1em; */
     margin-left: 1.7em;
     padding-top: 0.5em;
-    padding-bottom: 1em;
+    padding-bottom: 0.2em;
     padding-left: 2.5em;
     border-left: 0.3vh solid var(--border);
 }
@@ -421,14 +518,24 @@ ion-icon {
 
 #experience .highlight {
     font-family: "Ubuntu B";
+    box-sizing: content-box;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    white-space: normal;
 }
 
 #experience ul {
     list-style-type: circle;
 }
 
+#experience p {
+    margin: 0;
+    padding: 0;
+}
+
 #experience .text li {
-    margin-top: 1em;
+    margin-top: 0.2em;
 }
 
 #h_list {

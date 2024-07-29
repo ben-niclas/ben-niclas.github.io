@@ -14,53 +14,78 @@
                 <li class="indicator"><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
-        <div id="content">
-            <div class="section" id="greeting">
-                <div id="passbild"></div>
-                <div class="compact">
-                    <h1>Ben-Niclas Pohl</h1>
-                    <h2 class="highlight">Informatikstudent</h2>
-                    <ul id="info" class="list">
-                        <li>
-                            <div class="value">
-                                <ion-icon name="mail-unread-outline"></ion-icon>
-                                <div class="identifier">E-Mail</div>
-                                <a href="mailto:Ben-Niclas@hotmail.com">Ben-Niclas@hotmail.com</a>
-                            </div>
-                        </li>
-                        <!-- <li>
-                            <div class="value">
-                                <ion-icon name="call-outline"></ion-icon>
-                                <div class="identifier">Tel.</div>
-                                <a href="">+00 0000 00000 00</a>
-                            </div>
-                        </li> -->
-                        <li>
-                            <div class="value">
-                                <ion-icon name="logo-linkedin"></ion-icon>
-                                <div class="identifier">LinkedIn</div>
-                                <a href="https://www.linkedin.com/in/ben-niclas">@ben-niclas</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="value">
-                                <ion-icon name="logo-github"></ion-icon>
-                                <div class="identifier">GitHub</div>
-                                <a href="https://github.com/ben-niclas">@ben-niclas</a>
-                            </div>
-                        </li>
-                    </ul>
+        <div class="section" id="greeting">
+            <div id="passbild"></div>
+            <div class="compact">
+                <h1>Ben-Niclas Pohl</h1>
+                <h2 class="highlight">Informatikstudent</h2>
+                <ul id="info" class="list">
+                    <li>
+                        <div class="value">
+                            <ion-icon name="mail-unread-outline"></ion-icon>
+                            <div class="identifier">E-Mail</div>
+                            <a href="mailto:Ben-Niclas@hotmail.com">Ben-Niclas@hotmail.com</a>
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <div class="value">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <div class="identifier">Tel.</div>
+                            <a href="">+00 0000 00000 00</a>
+                        </div>
+                    </li> -->
+                    <li>
+                        <div class="value">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <div class="identifier">LinkedIn</div>
+                            <a href="https://www.linkedin.com/in/ben-niclas">@ben-niclas</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <div class="identifier">GitHub</div>
+                            <a href="https://github.com/ben-niclas">@ben-niclas</a>
+                        </div>
+                    </li>
+                </ul>
+            <div class="section content" id="about">
+                <div class="value header">
+                    <h2>Über mich</h2>
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+                <hr />
+                <div class="text">
+                    Ich komme aus Potsdam, Babelsberg und studiere im 5. Semester Informatik.
+                    Technik, besonders Software und ihre Möglichkeiten begeistern mich sehr.
+                    Insbesondere in der GreenIT sehe ich viel
+                    Potenzial.
                 </div>
             </div>
-            <hr class="contrast floating" />
-            <nav class="section value" id="navigator">
-                <a href="#education" class="goto contrast">
-                    Ausbildung
-                    <ion-icon name="school-outline"></ion-icon>
+            <div class="footer">
+            <div class="value">
+                <ion-icon name="newspaper-outline"></ion-icon>
+                <div class="identifier">Lebenslauf</div>
+                <a href="./res/Lebenslauf.pdf" class="keyword contrast">
+                    <div class="value">
+                        Download
+                        <ion-icon name="download-outline"</ion-icon>
+                    </div>
                 </a>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div id="content">
+            <!-- <hr class="contrast floating" /> -->
+            <!-- <nav class="section value" id="navigator">
                 <a href="#experience" class="goto contrast">
                     Erfahrungen
                     <ion-icon name="library-outline"></ion-icon>
+                </a>
+                <a href="#education" class="goto contrast">
+                    Ausbildung
+                    <ion-icon name="school-outline"></ion-icon>
                 </a>
                 <a href="#interests" class="goto contrast">
                     Meine Interessen
@@ -74,9 +99,9 @@
                     Kontakt
                     <ion-icon name="person-add-outline"></ion-icon>
                 </a>
-            </nav>
+            </nav> -->
             <!-- <hr /> -->
-            <div class="section content floating" id="about">
+            <!-- <div class="section content floating" id="about">
                 <div class="value header">
                     <h2>Über mich</h2>
                     <ion-icon name="person-outline"></ion-icon>
@@ -85,10 +110,10 @@
                 <div class="text">
                     Ich komme aus Potsdam, Babelsberg und studiere im 5. Semester Informatik.
                     Technik, besonders Software und ihre Möglichkeiten begeistern mich sehr.
-                    Insbesondere in der GreenIT shehe ich besonders viel
+                    Insbesondere in der GreenIT sehe ich besonders viel
                     Potenzial.
                 </div>
-            </div>
+            </div> -->
             <div class="section content floating" id="experience">
                 <div class="value header">
                     <h2>Erfahrungen</h2>
@@ -113,14 +138,9 @@
                                 </div>
                             </div>
                             <div class="text">
-                                <ul>
-                                    <li>
-                                        Einfache Suchmaschine die Stichwörter (und ggf. ihre Synonyme) aus Suchanfrage in Datensatz (Filmdatenbank) sucht und Treffer (Filmtitel ausgibt)
-                                    </li>
-                                    <li>
-                                        „Web-spider“ automatisiertes Auslesen von Inhalten auf Webseiten abhängig von Stichwort
-                                    </li>
-                                </ul>
+                                • Einfache Suchmaschine die Stichwörter (und ggf. ihre Synonyme) aus Suchanfrage in Datensatz (Filmdatenbank) sucht und Treffer (Filmtitel ausgibt)
+                                <p></p>
+                                • „Web-spider“ automatisiertes Auslesen von Inhalten auf Webseiten abhängig von Stichwort
                             </div>
                         </div>
                     </li>
@@ -153,12 +173,71 @@
                             </div>
                         </div>
                     </li>
+                    <li>
+                        <div class="value">
+                            <div class="keyword">2022</div>
+                            <div class="highlight">Humboldt Universität zu Berlin</div>
+                        </div>
+                        <div class="description">
+                            <div class="text">
+                                B.sc. Informatik | 1. Semester
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value">
+                            <div class="keyword">2021</div>
+                            <div class="highlight">JUNIOR Schülerfirma</div>
+                        </div>
+                        <div class="description">
+                            <div class="text">
+                                im Rahmen des JUNIOR Schülerprogramms
+                                <p></p>
+                                • Erstellen eines Onlineshops mit Stripe
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value">
+                            <div class="keyword">2019</div>
+                            <div class="highlight">Schülerpraktikum in der IT</div>
+                        </div>
+                        <div class="description">
+                            <div class="text">
+                                Christoph Miethke GmbH & Co. KG
+                                <p></p>
+                                • Erstellen einer Webseite <a>https://bbraun-miethke.com</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value">
+                            <div class="keyword">2016</div>
+                            <div class="highlight">Bertha-von-Suttner-Gymnasium Babelsberg</div>
+                        </div>
+                        <div class="description">
+                            <div class="text">
+                                Abitur (2022): Durchschnittsnote - (2.0)
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="value">
+                            <div class="keyword">2011</div>
+                            <div class="highlight">Grundschule Bruno-H. Bürgel</div>
+                        </div>
+                        <div class="description">
+                            <div class="text">
+                                Potsdam Babelsberg
+                            </div>
+                        </div>
+                    </li>
                 </ul>
-                <div class="text">
+                <!-- <div class="text">
                     Diese Projekte stellen bis jetzt die größten Implementierungen dar, die ich bis jetzt gemacht habe. Allerdings finden sich auf meinem Github Account noch viele weitere (kleinere) Beispiele.
-                </div>
+                </div> -->
             </div>
-            <div class="section content floating" id="education">
+            <!-- <div class="section content floating" id="education">
                 <div class="value header">
                     <h2>Ausbildung</h2>
                     <ion-icon name="school-outline"></ion-icon>
@@ -182,14 +261,14 @@
                         <div class="purpose">B.sc. Informatik</div>
                         <div class="institution">Humboldt-Universität zu Berlin</div>
                     </li>
-                    <!-- <p></p>
+                    <p></p>
                     <li class="value">
                         <div class="year highlight">2024</div>
                         <div class="purpose">B.sc. Computational Science</div>
                         <div class="institution">Universität Potsdam</div>
-                    </li> -->
+                    </li>
                 </ul>
-            </div>
+            </div> -->
             <div class="section content floating" id="interests">
                 <div class="value header">
                     <h2>Meine Interessen</h2>
@@ -215,9 +294,7 @@
                     </div>
                 </div>
                 <div class="text">
-                    Ich sehe Natural Language Processing als zukunftsträchtiges Gebiet im Bezug auf Mensch-Computer-Interaktion.
-                    Dabei muss es sich nicht ausschließlich um generative KIs handeln. Des weiteren wird die Nachfrage nach Computergestützen Prozesen steigen, damit auch der Stromverbruch.
-                    Diesen zu reduzieren liegt mir sehr am Herzen.
+                    Ich betrachte Natural Language Processing als ein vielversprechendes Feld für die Zukunft der Mensch-Computer-Interaktion. Dabei geht es nicht nur um generative KI-Systeme. Zudem wird der Bedarf an computergestützten Prozessen weiter steigen, was auch den Energieverbrauch erhöht. Es ist mir ein großes Anliegen, diesen Energieverbrauch zu reduzieren.
                 </div>
                 <div class="value" id="i_keywords">
                     <div class="keyword value">
@@ -234,8 +311,7 @@
                     </div>
                 </div>
                 <div class="text">
-                    Abseits von natütlichen Sprachen, stellen auch Programmiersprachen ein interessantes Gebiet dart.
-                    Obwohl vieles dahingehend bereits erforscht ist, halte ich die intensive Auseinandersetzung mit neuen und alten Sprachen für relevant.
+                    Abseits der natürlichen Sprachen sind auch Programmiersprachen ein faszinierendes Gebiet. Obwohl bereits viel erforscht wurde, halte ich die vertiefte Auseinandersetzung mit sowohl neuen als auch etablierten Programmiersprachen für äußerst relevant.
                 </div>
             </div>
             <div class="section content floating" id="hobbies">
@@ -259,7 +335,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section content floating" id="contact">
+            <!-- <div class="section content floating" id="contact">
                 <div class="value header">
                     <h2>Kontakt</h2>
                     <ion-icon name="person-add-outline"></ion-icon>
@@ -274,13 +350,13 @@
                             <a href="mailto:Ben-Niclas@hotmail.com">Ben-Niclas@hotmail.com</a>
                         </div>
                     </li>
-                    <!-- <li>
+                    <li>
                         <div class="value">
                             <ion-icon name="call-outline"></ion-icon>
                             <div class="identifier">Tel.</div>
                             <a href="">+00 0000 00000 00</a>
                         </div>
-                    </li> -->
+                    </li>
                     <li>
                         <div class="value">
                             <ion-icon name="logo-linkedin"></ion-icon>
@@ -326,9 +402,9 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div id="border"></div>
+        <!-- <div id="border"></div> -->
         <script
             type="module"
             src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
