@@ -28,10 +28,10 @@
         font-size: 15px;
     }
     #greeting h1 {
-        font-size: 4vh !important;
+        font-size: 3em !important;
     }
     #greeting h2 {
-        font-size: 2vh !important;
+        font-size: 2em !important;
     }
     #passbild {
         width: 170px !important;
@@ -140,8 +140,8 @@ a {
     background-color: var(--highlight-bg);
     color: var(--highlight-fg);
     display: inline-block;
-    padding: 1vh;
-    border-radius: 1vw;
+    padding: 0.5em;
+    border-radius: 0.5em;
     min-width: max-content;
     /* margin-top: 1vh; */
 }
@@ -151,8 +151,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 200px;
-    height: 250px;
+    min-width: 200px;
+    min-height: 200px;
     border-radius: 100%;
     box-sizing: border-box;
 }
@@ -196,22 +196,27 @@ a {
 }
 
 #greeting .compact {
-    margin-left: 3vw;
+    margin-left: 1.2em;
     height: 100%;
 }
 
 #greeting .footer {
     position: absolute;
-    bottom: 3em;
+    bottom: 0;
+    padding-bottom: 3em;
+    width: 100%;
+    padding-right: 2em;
+    background-color: white;
+    padding-top: 1em;
 }
 
 #info {
-    margin-top: 1vh;
+    margin-top: 0.6em;
 }
 
 .identifier {
     font-family: "Ubuntu B";
-    margin-left: 1vw;
+    margin-left: 1em;
     text-align: left;
     width: 6em;
     min-width: max-content;
@@ -228,7 +233,7 @@ hr {
     color: var(--contrast);
     border-color: var(--border);
     border-style: solid;
-    border-width: 0.2vh;
+    border-width: 0.1em;
 }
 
 hr.contrast {
@@ -237,12 +242,12 @@ hr.contrast {
 }
 
 .floating {
-    margin-left: 1vw;
-    margin-right: 2vw;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 ion-icon {
-    height: 3vh;
+    height: 1.5em;
 }
 
 /* #navigator {
@@ -276,12 +281,12 @@ ion-icon {
     flex-direction: row;
     align-items: center;
     min-width: max-content;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .goto ion-icon {
-    margin-left: 1vw;
+    margin-left: 1em;
 }
 
 .goto a {
@@ -306,7 +311,7 @@ ion-icon {
     top: 0;
     bottom: 0;
     width: 1.5em;
-    border-radius: 0 1vw 1vw 0;
+    border-radius: 0 1em 1em 0;
     color: var(--contrast);
     background-color: white;
     /* min-width: max-content; */
@@ -339,7 +344,7 @@ ion-icon {
     bottom: 0;
     width: 1em;
     max-width: 1em;
-    border-radius: 1vw;
+    border-radius: 0.5em;
     min-width: max-content;
     display: flex;
     flex-direction: column;
@@ -351,19 +356,22 @@ ion-icon {
 .indicator {
     display: block;
     /* width: 2.5vh; */
-    height: 2.5vh;
+    min-height: 1em;
+    /* max-width: 1em; */
+    /* min-width: 0.1em; */
     /* background-color: white; */
-    border: 0.3vh solid var(--border);
+    border: 0.1em solid var(--border);
     border-radius: 50px;
     margin: 0;
-    margin-bottom: 3vh;
+    margin-bottom: 1.5em;
     text-align: center;
     padding-right: 1em;
+    overflow: hidden;
 }
 
 .indicator.active {
     background-color: var(--contrast);
-    border: 0.3vh solid var(--contrast);
+    border: 0.1em solid var(--contrast);
 }
 
 /* .indicator:hover {
@@ -376,7 +384,7 @@ ion-icon {
 }
 
 #outline .list {
-    margin-top: 3vh;
+    margin-top: 1em;
     /* flex-direction: column; */
     /* justify-content: space-between; */
     width: 100%;
@@ -429,7 +437,7 @@ ion-icon {
 }
 
 .header ion-icon {
-    font-size: 3vh;
+    font-size: 1.5em;
 }
 
 .header h2 {
@@ -473,7 +481,7 @@ ion-icon {
     border-radius: 50px;
     align-items: center;
     justify-content: center;
-    border: 0.2vh solid var(--border);
+    border: 0.1em solid var(--border);
     background-color: white;
     min-width: max-content;
     box-sizing: content-box;
@@ -490,7 +498,7 @@ ion-icon {
 
 .keyword.contrast {
     margin-left: 0.2em;
-    border: 0.2vh solid var(--contrast);
+    border: 0.1em solid var(--contrast);
     background-color: var(--contrast);
     color: white;
 }
@@ -514,7 +522,7 @@ ion-icon {
     padding-top: 0.5em;
     padding-bottom: 0.2em;
     padding-left: 2.5em;
-    border-left: 0.3vh solid var(--border);
+    border-left: 0.1em solid var(--border);
 }
 
 .description .text {
@@ -553,10 +561,10 @@ ion-icon {
 #downloads {
     margin-left: 1em;
     padding-left: 1em;
-    border-left: 0.3vh solid var(--border);
+    border-left: 0.1em solid var(--border);
 }
 
 .logo {
     margin-left: 0.3em;
-    font-size: 3vh;
+    font-size: 2em;
 }
