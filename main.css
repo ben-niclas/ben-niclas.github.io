@@ -59,10 +59,13 @@
         flex-direction: column;
     }
     #greeting h1 {
-        font-size: 2.5em !important;
+        font-size: 3em !important;
     }
     #greeting h2 {
-        font-size: 1.5em !important;
+        font-size: 2em !important;
+    }
+    #greeting {
+        font-size: 1.2em;
     }
     #passbild {
         width: 200px !important;
@@ -73,6 +76,7 @@
         display: none !important;
     }
     #content {
+        font-size: 1.2em;
         margin-left: 1em !important;
         margin-right: 1em !important;
     }
@@ -87,6 +91,7 @@
 
 * {
     font-family: "Ubuntu R";
+    font-size: 1em;
     overflow-x: hidden;
 }
 
@@ -142,7 +147,7 @@ a {
 }
 
 #passbild {
-    background-image: url("./img/passbild_small.png");
+    background-image: url("./img/passbild_neu.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
