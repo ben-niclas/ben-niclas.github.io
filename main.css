@@ -20,8 +20,8 @@
 
 @media (max-width: 936px) {
     #outline {
-        display: none;
-        visibility: hidden;
+        display: none !important;
+        visibility: hidden !important;
     }
     #greeting {
         left: 0 !important;
