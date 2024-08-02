@@ -37,6 +37,12 @@
         width: 170px !important;
         height: 200px !important;
     }
+    #content h1 {
+        font-size: 3em !important;
+    }
+    #content h2 {
+        font-size: 2em !important;
+    }
     #content {
         margin-left: 22em !important;
         font-size: 15px;
@@ -75,9 +81,12 @@
         visibility: hidden !important;
         display: none !important;
     }
+    #content h2 {
+        font-size: 2em !important;
+    }
     #content {
         font-size: 1.2em;
-        margin-left: 1em !important;
+        margin-left: 0.5em !important;
         margin-right: 1em !important;
     }
 }
@@ -511,8 +520,9 @@ ion-icon {
     /* font-size: 1.5vw; */
 }
 
-#i_keywords {
-    margin-bottom: 1em;
+.i_keywords {
+    margin-bottom: 0.5em;
+    overflow-x: auto;
 }
 
 .description {
@@ -566,5 +576,5 @@ ion-icon {
 
 .logo {
     margin-left: 0.3em;
-    font-size: 2em;
+    font-size: 1.5em;
 }
