@@ -215,7 +215,7 @@ a {
 }
 
 #greeting .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding-bottom: 3em;
     width: 100%;
