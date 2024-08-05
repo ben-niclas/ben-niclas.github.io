@@ -215,7 +215,7 @@ a {
 }
 
 #greeting .footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     padding-bottom: 3em;
     width: 100%;
@@ -544,7 +544,7 @@ ion-icon {
     font-family: "Ubuntu RI";
 }
 
-#experience .highlight {
+.beam .highlight {
     font-family: "Ubuntu B";
     box-sizing: content-box;
     text-wrap: wrap;
@@ -553,16 +553,16 @@ ion-icon {
     white-space: normal;
 }
 
-#experience ul {
+.beam ul {
     list-style-type: circle;
 }
 
-#experience p {
+.beam p {
     margin: 0;
     padding: 0;
 }
 
-#experience .text li {
+.beam .text li {
     margin-top: 0.2em;
 }
 
