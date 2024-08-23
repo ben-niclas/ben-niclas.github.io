@@ -53,7 +53,6 @@
     #greeting {
         position: relative !important;
         display: flex !important;
-        /* justify-content: center !important; */
         align-items: center !important;
         max-width: 100vw !important;
         width: 100% !important;
@@ -106,7 +105,6 @@
 * {
     font-family: "Ubuntu R";
     font-size: 1em;
-    overflow-x: hidden;
 }
 
 body {
@@ -158,6 +156,40 @@ a {
     min-width: max-content;
 }
 
+@keyframes spin-z {
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+#pb-container {
+    min-width: 200px;
+    min-height: 300px;
+    max-width: 200px;
+    box-sizing: border-box;
+}
+
+#pb-container:hover:not(.hovered) {
+    animation: spin-z 1.2s ease-in forwards;
+    animation-delay: 0.2s;
+}
+
+#pb-container:hover {
+    animation-play-state: running;
+}
+
+@keyframes pulse {
+    0% {
+        margin-top: 40%;
+    }
+    50% {
+        margin-top: 20%;
+    }
+    100% {
+        margin-top: 40%;
+    }
+}
+
 #passbild {
     background-image: url("./img/passbild_neu.png");
     background-position: center;
@@ -165,8 +197,14 @@ a {
     background-size: cover;
     min-width: 200px;
     min-height: 200px;
-    border-radius: 100%;
-    box-sizing: border-box;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+    margin-top: 40%;
+    animation-name: pulse;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 
 #passbild:hover {
@@ -201,8 +239,10 @@ a {
     bottom: 0;
     padding-bottom: 3em;
     width: 100%;
-    padding-right: 2em;
-    background-color: white;
+    /* padding-right: 2em; */
+    /* background-color: white; */
+    background-color: #ffffffad;
+    backdrop-filter: blur(10px);
     padding-top: 1em;
 }
 
@@ -220,7 +260,7 @@ a {
 
 .value {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     /* margin-top: 0.5vh; */
 }
@@ -340,6 +380,7 @@ ion-icon {
     text-align: center;
     padding-right: 1em;
     overflow: hidden;
+    max-width: 3px;
 }
 
 .indicator.active {
@@ -357,17 +398,17 @@ ion-icon {
     height: 50%;
 }
 
-#outline:hover {
+/* #outline:hover {
     transition: 0.2s ease-in;
     width: 10em;
     box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.35);
-}
+} */
 
 #content {
     margin-left: 26em;
     text-wrap: wrap;
     overflow-wrap: break-word;
-    overflow: hidden;
+    /* overflow: hidden; */
     white-space: normal;
 }
 
@@ -386,7 +427,18 @@ ion-icon {
 }
 
 .header {
+    width: 100%;
     margin-top: 1em;
+    position: sticky;
+    top: 0;
+    overflow: visible;
+    min-height: fit-content;
+    background-color: white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding-bottom: 0.1em;
+    z-index: 100;
 }
 
 .header ion-icon {
@@ -415,14 +467,18 @@ ion-icon {
     padding: 0;
 }
 
-#education li {
+li {
     text-align: left;
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
 }
 
 #education {
     position: relative;
     display: block;
+}
+
+li:last-child .description {
+    border: none;
 }
 
 .keyword {
@@ -444,8 +500,15 @@ ion-icon {
 }
 
 .keyword:hover {
-    transition: 0.2s ease-in;
+    /* transition: 0.2s ease-in; */
     background-color: var(--highlight-bg);
+}
+
+.keyword.contrast:hover {
+    color: black;
+    background-color: var(--highlight-bg);
+
+    /* background-color: #75a1ee; */
 }
 
 .keyword.contrast {
@@ -486,7 +549,7 @@ ion-icon {
 }
 
 .beam ul {
-    list-style-type: circle;
+    list-style-type: none;
 }
 
 .beam p {
