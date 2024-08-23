@@ -386,6 +386,10 @@ ion-icon {
 .indicator.active {
     background-color: var(--contrast);
     border: 0.1em solid var(--contrast);
+    animation-name: extend;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
 }
 
 .list {
@@ -504,10 +508,28 @@ li:last-child .description {
     background-color: var(--highlight-bg);
 }
 
-.keyword.contrast:hover {
-    color: black;
-    background-color: var(--highlight-bg);
+@keyframes extend {
+    0% {
+        border-width: 0.1em;
+        border-color: white;
+    }
+    50% {
+        border-width: 0.4em;
+        border-color: var(--highlight-bg);
+    }
+    100% {
+        border-width: 0.1em;
+        border-color: white;
+    }
+}
 
+.keyword.contrast:hover {
+    /* color: black; */
+    background-color: var(--contrast);
+    animation-name: extend;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
     /* background-color: #75a1ee; */
 }
 
@@ -589,6 +611,7 @@ li:last-child .description {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
+    border-radius: 15px;
 }
 
 .section {
